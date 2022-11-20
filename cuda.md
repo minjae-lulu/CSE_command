@@ -30,3 +30,11 @@ $ sudo apt install nvidia-cuda-toolkit
 
 #### cuda 밀기, cuda 버전맞게 설치
 [https://whiteglass.tistory.com/15](https://whiteglass.tistory.com/15)
+
+#### cuda 관련 오류
+처음에 pycash 등등 어떤 package가 설치가 gpu에 맞게 안되고 cpu에 맞춰져서 뭔가 문제를 일으킬수 있다. 깃헙 이슈를 보면 주로 package때문이라고 하는데, 이거 설치 되어있는데 왜그러지? 한다. 하지만 이는 cpu에 맞춰져있기 때문에고, 
+```
+$ pip uninstall [package]
+$ pip cache remove [package]
+$ pip install [package]
+```
