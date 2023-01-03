@@ -38,3 +38,11 @@ $ pip uninstall [package]
 $ pip cache remove [package]
 $ pip install [package]
 ```
+
+
+### 자주보는 오류
+The current Pytorch install supports CUDA capabilites sm_37 sm_50 sm_60 sm_61 sm_70 sm_75 compute _37. If you want to use the NVIDIA GeForce RTX 3080 GPU with PyTorch, please check the instructions at ~~~~~~.
+
+-> 저런 문구가 뜨면서 어떤 싸이트 하나를 추천해주는데, 저기서 적당한 버전으로 올려주면 됨. pytorch cuda공식 사이트임
+
+
